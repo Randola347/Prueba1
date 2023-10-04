@@ -4,6 +4,8 @@
  */
 package GUI;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lpper
@@ -53,7 +55,7 @@ public class GUI extends javax.swing.JFrame {
         btnPorcentaje = new javax.swing.JButton();
         btnCE = new javax.swing.JButton();
         btnFlecha = new javax.swing.JButton();
-        btnC1 = new javax.swing.JButton();
+        btnNose = new javax.swing.JButton();
         btnMC = new javax.swing.JButton();
         btnMR = new javax.swing.JButton();
         btnMR1 = new javax.swing.JButton();
@@ -212,10 +214,10 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        btnC1.setText("+-");
-        btnC1.addActionListener(new java.awt.event.ActionListener() {
+        btnNose.setText("+-");
+        btnNose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnC1ActionPerformed(evt);
+                btnNoseActionPerformed(evt);
             }
         });
 
@@ -278,7 +280,7 @@ public class GUI extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(btnC1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btnNose, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
@@ -347,7 +349,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCE, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnFlecha, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnC1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnNose, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -401,7 +403,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         // TODO add your handling code here:
-        lblDatos.setText(lblDatos.getText() + "0");
+        lblDatos.setText(lblDatos.getText() + "7");
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btnResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadoActionPerformed
@@ -416,10 +418,13 @@ public class GUI extends javax.swing.JFrame {
                 lblDatos.setText(Integer.toString(num1 - num2));
                 break;
             case "*":
-                 lblDatos.setText(Integer.toString(num1 * num2));
+                lblDatos.setText(Integer.toString(num1 * num2));
                 break;
             case "/":
-                 lblDatos.setText(Integer.toString(num1 / num2));
+                lblDatos.setText(Integer.toString(num1 / num2));
+                break;
+            case "%":
+                lblDatos.setText(Integer.toString(num1 % num2));
                 break;
         }
     }//GEN-LAST:event_btnResultadoActionPerformed
@@ -470,6 +475,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -503,43 +509,54 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnComaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComaActionPerformed
         // TODO add your handling code here:
-        lblDatos.setText(lblDatos.getText() + ",");
+        JOptionPane.showMessageDialog(rootPane, "No se logra realizar la operacion con Decimales");
     }//GEN-LAST:event_btnComaActionPerformed
 
     private void btnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPorcentajeActionPerformed
         // TODO add your handling code here:
+        num1 = Integer.parseInt(lblDatos.getText());
+        signo = "%";
+        lblDatos.setText("");
     }//GEN-LAST:event_btnPorcentajeActionPerformed
 
     private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
         // TODO add your handling code here:
+        lblDatos.setText("");
     }//GEN-LAST:event_btnCEActionPerformed
 
     private void btnFlechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFlechaActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnFlechaActionPerformed
 
-    private void btnC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC1ActionPerformed
+    private void btnNoseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNoseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnC1ActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
+    }//GEN-LAST:event_btnNoseActionPerformed
 
     private void btnMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMCActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnMCActionPerformed
 
     private void btnMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMRActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnMRActionPerformed
 
     private void btnMR1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMR1ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnMR1ActionPerformed
 
     private void btnMmásActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMmásActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnMmásActionPerformed
 
     private void btnMmenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMmenosActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Boton sin funcionamiento");
     }//GEN-LAST:event_btnMmenosActionPerformed
 
     /**
@@ -558,7 +575,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
     private javax.swing.JButton btnC;
-    private javax.swing.JButton btnC1;
     private javax.swing.JButton btnCE;
     private javax.swing.JButton btnComa;
     private javax.swing.JButton btnDividir;
@@ -570,6 +586,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton btnMmenos;
     private javax.swing.JButton btnMmás;
     private javax.swing.JButton btnMultiplicar;
+    private javax.swing.JButton btnNose;
     private javax.swing.JButton btnPorcentaje;
     private javax.swing.JButton btnRestar;
     private javax.swing.JButton btnResultado;

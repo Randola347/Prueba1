@@ -75,7 +75,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="btnC" min="-2" pref="53" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="btnC1" min="-2" pref="53" max="-2" attributes="0"/>
+                                          <Component id="btnNose" min="-2" pref="53" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="btn9" min="-2" pref="53" max="-2" attributes="0"/>
@@ -162,7 +162,7 @@
                       <Component id="btnC" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                       <Component id="btnCE" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                       <Component id="btnFlecha" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="btnC1" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="btnNose" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -391,12 +391,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFlechaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnC1">
+        <Component class="javax.swing.JButton" name="btnNose">
           <Properties>
             <Property name="text" type="java.lang.String" value="+-"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnC1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNoseActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnMC">
